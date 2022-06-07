@@ -22,10 +22,11 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
     hardhat: {
       chainId: 1337
     },
-    // mumbai: {
-    //   url: "https://rpc-mumbai.matic.today",
-    //   accounts: [process.env.pk]
-    // },
+    mumbai: {
+      // url: "https://rpc-mumbai.matic.today",
+      url: "https://polygon-mumbai.g.alchemy.com/v2/rJtsvK7HmqIDegPktCeviwFpWBjkX7GC",
+      accounts: [process.env.pk]
+    },
     // polygon: {
     //   url: "https://polygon-rpc.com/",
     //   accounts: [process.env.pk]
